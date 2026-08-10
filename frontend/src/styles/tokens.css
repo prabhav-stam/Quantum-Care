@@ -1,0 +1,47 @@
+:root {
+  /* GenZ Color Palette - Dark Mode Default */
+  --color-primary: #8a2be2;      /* Neon Purple */
+  --color-primary-dark: #4b0082; /* Deep Indigo */
+  --color-primary-light: #ff00ff;/* Magenta Pink */
+  
+  --color-bg: #0f0c29;           /* Deep space background */
+  --color-surface: rgba(25, 20, 40, 0.6); /* Glassmorphism surface */
+  --color-border: rgba(255, 255, 255, 0.1);
+  
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b3b3cc;
+  --color-text-muted: #666699;
+  
+  /* Status Colors updated to be vibrant */
+  --color-critical: #ff3366;     /* Neon Red/Pink */
+  --color-critical-bg: rgba(255, 51, 102, 0.15);
+  
+  --color-urgent: #ff9933;       /* Neon Orange */
+  --color-urgent-bg: rgba(255, 153, 51, 0.15);
+  
+  --color-normal: #00ffcc;       /* Cyan/Teal */
+  --color-normal-bg: rgba(0, 255, 204, 0.15);
+  
+  --color-info: #33ccff;         /* Sky Blue */
+  --color-info-bg: rgba(51, 204, 255, 0.15);
+  
+  --color-success: #00ffcc;
+  --color-warning: #ff9933;
+  --color-danger: #ff3366;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #8a2be2, #ff00ff);
+  --gradient-bg: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  
+  /* Structural Tokens */
+  --radius-sm: 8px;
+  --radius-md: 16px;             /* Much softer, rounded corners */
+  --radius-lg: 24px;
+  
+  --shadow-card: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --shadow-glow: 0 0 15px rgba(138, 43, 226, 0.5);
+  
+  --font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  --sidebar-width: 260px;
+  --topbar-height: 70px;
+}

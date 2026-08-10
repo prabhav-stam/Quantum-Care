@@ -1,0 +1,48 @@
+# ============================================================
+# Quantum Care Backend Configuration
+# ============================================================
+# This file configures the Spring Boot application.
+# Replace <db_password> with your actual MongoDB Atlas password.
+# ============================================================
+
+spring:
+  application:
+    name: Quantum Care
+
+  # ---- MongoDB Configuration ----
+  data:
+    mongodb:
+      uri: mongodb+srv://prabhavpatel8688205215_db_user:JLosQmVJeKcofGKw@cluster0.viyyt2c.mongodb.net/vitalcore?retryWrites=true&w=majority&appName=Cluster0
+      # The database name is 'Quantum Care' — it will be created automatically
+
+  # ---- Jackson (JSON) Configuration ----
+  jackson:
+    default-property-inclusion: non_null    # Don't include null fields in JSON responses
+    serialization:
+      write-dates-as-timestamps: false      # Use ISO-8601 date format instead of timestamps
+
+# ---- Server Configuration ----
+server:
+  port: 8080
+
+# ---- JWT Configuration ----
+# IMPORTANT: Change the secret in production! Must be at least 256 bits (32+ characters) for HS256
+jwt:
+  secret: ${JWT_SECRET:QuantumCareSecretKeyForJWTTokenGenerationMustBeAtLeast256BitsLong2024}
+  expiration: ${JWT_EXPIRATION:86400000}   # 24 hours in milliseconds
+
+# ---- SpringDoc / Swagger Configuration ----
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+
+# ---- Logging ----
+logging:
+  level:
+    com.vitalcore: DEBUG
+    org.springframework.security: INFO
+    org.springframework.data.mongodb: INFO

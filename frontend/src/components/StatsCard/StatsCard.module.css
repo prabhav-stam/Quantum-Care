@@ -1,0 +1,57 @@
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 24px;
+  color: var(--color-primary);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+
+.trend {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.up {
+  color: var(--color-normal);
+}
+
+.down {
+  color: var(--color-critical);
+}

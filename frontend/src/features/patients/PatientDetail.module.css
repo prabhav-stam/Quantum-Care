@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+.subtitle {
+  margin: 4px 0 0 0;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.error {
+  color: var(--color-critical);
+  background: var(--color-critical-bg);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+}
+
+.success {
+  color: var(--color-success);
+  background: var(--color-normal-bg);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.infoSection h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--color-primary-dark);
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 8px;
+}
+
+.infoRow {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.infoLabel {
+  width: 140px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.infoValue {
+  color: var(--color-text-primary);
+  flex: 1;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+  grid-column: 1 / -1;
+}

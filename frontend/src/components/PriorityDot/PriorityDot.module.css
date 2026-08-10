@@ -1,0 +1,30 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.critical {
+  background-color: var(--color-critical);
+}
+
+.urgent {
+  background-color: var(--color-urgent);
+}
+
+.normal {
+  background-color: var(--color-normal);
+}
